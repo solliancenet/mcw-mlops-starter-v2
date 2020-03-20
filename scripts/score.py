@@ -58,7 +58,7 @@ def run(raw_data):
 
         print("Prediction created " + time.strftime("%H:%M:%S"))
         
-        return json.dumps(results)
+        return json.dumps(results.tolist())
     except Exception as e:
         error = str(e)
         print("ERROR: " + error + " " + time.strftime("%H:%M:%S"))
